@@ -23,6 +23,11 @@ function presentToUser($data, $asset, $type) {
 		header('Content-Type: audio/mp3');
 		echo $data;
 	}
+	elseif(preg_match("#^<roblox!#", $data)) {
+		header('Content-Type: application/octet-stream');
+		header('Content-Disposition: attachment; filename="roblox-model-'.$asset.'.rbxm"');
+		echo $data;
+	}
 	else {
 		header('Content-Type: text/xml');
 		//header('Content-Disposition: attachment; filename="roblox-model-'.$asset.'.rbxm"');
