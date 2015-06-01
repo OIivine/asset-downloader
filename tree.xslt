@@ -14,9 +14,9 @@
 			<head>
 				<title>Roblox Asset - <xsl:value-of select="Item/Properties/*[@name='Name']" /></title>
 				<link rel="stylesheet" href="monokai.css" />
-				<link rel="shortcut icon" type="image/png" href="http://eric-wieser.tk/images/favicon.png" />
-				<link href="http://fonts.googleapis.com/css?family=Muli:400,400italic" rel="stylesheet" type="text/css" />
-				<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+				<link rel="shortcut icon" type="image/png" href="http://ericwieser.me/images/favicon.png" />
+				<link href="//fonts.googleapis.com/css?family=Muli:400,400italic" rel="stylesheet" type="text/css" />
+				<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 				<style>
 					body {
 						background: #F0F0F0;
@@ -134,7 +134,7 @@
 			</span>
 			<a class="name" title="{@class}"><xsl:value-of select="./Properties/*[@name='Name']"/></a>
 			<div class="details">
-				<xsl:if test="(@class='Script' or @class='LocalScript'or @class='CoreScript') and ./Properties/*[@name='Source']">
+				<xsl:if test="(@class='Script' or @class='LocalScript' or @class='ModuleScript' or @class='CoreScript') and ./Properties/*[@name='Source']">
 					<pre><code class="language-lua">
 	<xsl:value-of select="./Properties/*[@name='Source']"/>
 	</code></pre>
