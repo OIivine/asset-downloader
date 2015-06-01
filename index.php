@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Roblox Asset Downloader</title>
+		<meta charset="utf-8" />
 		<link href="http://fonts.googleapis.com/css?family=Muli:400,400italic" rel="stylesheet" type="text/css" />
 		<link rel="shortcut icon" type="image/png" href="http://eric-wieser.tk/images/favicon.png" />
 		<!--[if IE]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -39,9 +40,16 @@
 				right: 0;
 				display: block;
 			}
+			footer ul {
+				list-style-type: none;
+			}
+			footer ul li {
+				display: inline;
+				margin-right: 1.5em;
+			}
 			
 			header {
-				background: #606060 url(http://eric-wieser.tk/images/logo.png) no-repeat 5px 50%;
+				background: #606060 url(https://avatars2.githubusercontent.com/u/425260?v=3&s=50) no-repeat 5px 50%;
 				color: white;
 				overflow: hidden;
 				padding: 5px;
@@ -95,7 +103,10 @@
 			</div>
 		</section>
 		<footer>
-			<a href="http://eric-wieser.tk">More projects...</a>
+			<ul>
+				<li><a href="https://github.com/eric-wieser">More projects…</a></li>
+				<li><a href="https://github.com/RobloxLabs/asset-downloader">Source code</a></li>
+			</ul>
 		</footer>
 	</body>
 </html>
